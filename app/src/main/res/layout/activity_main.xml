@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.medvedomg.learnkotlin2.MainActivity">
+
+    <com.quarkworks.roundedframelayout.RoundedFrameLayout
+        android:id="@+id/main"
+        android:layout_centerInParent="true"
+        app:cornerRadiusBottomLeft="100dp"
+        app:cornerRadiusBottomRight="100dp"
+        app:cornerRadiusTopLeft="100dp"
+        app:cornerRadiusTopRight="100dp"
+        android:layout_height="100dp"
+        android:layout_width="100dp">
+
+        <com.example.medvedomg.learnkotlin2.LockableScrollView
+            android:id="@+id/scrollView"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:scaleType="center"
+                android:src="@drawable/users_blur2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.example.medvedomg.learnkotlin2.LockableScrollView>
+
+    </com.quarkworks.roundedframelayout.RoundedFrameLayout>
+</RelativeLayout>
